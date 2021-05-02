@@ -144,6 +144,7 @@ body {
 .container .cards .card footer button:active {
     outline: none;
     background: transparent;
+    color: #3a86ff;
 }
 
 .container .cards .card footer button.green {
