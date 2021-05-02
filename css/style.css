@@ -35,13 +35,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .container .cards .card {
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    margin: 0 50px;
+    margin: 20px 50px;
     background: rgb(245, 245, 245);
     border-radius: 16px;
     padding: 10px;
@@ -140,6 +141,11 @@ body {
     cursor: pointer;
 }
 
+.container .cards .card footer button:active {
+    outline: none;
+    background: transparent;
+}
+
 .container .cards .card footer button.green {
     background: #2dbb26;
 }
@@ -156,4 +162,10 @@ body {
     font-size: 42px;
     margin-right: 40px;
     font-weight: 800;
+}
+
+@media only screen and (max-width: 500px) {
+    .container .cards {
+        flex-direction: column;
+    }
 }
