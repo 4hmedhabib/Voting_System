@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    box-sizing: border-box;
+}
+
+
+/* img {
+    width: 100%;
+    height: auto;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+} */
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #e2eafc;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .cards .card {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 50px;
+    background: rgb(245, 245, 245);
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.05);
+}
+
+.container .cards .card .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.container .cards .card .top .party-logo {
+    width: 48px;
+    height: auto;
+}
+
+.container .cards .card .top .party-logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.container .cards .card .top .party-name h2 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.container .cards .card .main .img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.container .cards .card .main .img img {
+    width: 100%;
+    height: auto;
+    border-radius: 9px;
+}
+
+.container .cards .card .main .name {
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container .cards .card .main .name h2 {
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3a85ff62;
+}
+
+.container .cards .card .main .desc {
+    min-height: 85px;
+    padding-left: 10px;
+    color: #425466;
+    font-size: 14px;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.container .cards .card footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding-left: 10px;
+}
+
+.container .cards .card footer button {
+    height: 100%;
+    width: 190px;
+    border-radius: 105px;
+    outline: none;
+    border: none;
+    background: #3a86ff;
+    color: white;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.container .cards .card footer button.green {
+    background: #2dbb26;
+}
+
+.container .cards .card footer button.red {
+    background: red;
+}
+
+.container .cards .card footer button i {
+    margin-right: 10px;
+}
+
+.container .cards .card footer .voteNum {
+    font-size: 42px;
+    margin-right: 40px;
+    font-weight: 800;
+}
